@@ -1,6 +1,5 @@
-<% copyright_year = config.dig("project", "copyright", "year")&.to_i %>
-<% current_year = Time.now.year %>
-
+<%- copyright_year = config.dig("project", "copyright", "year")&.to_i -%>
+<%- current_year = Time.now.year -%>
 This software is licensed under the MIT License.
 
 Copyright <%= copyright_year && copyright_year < current_year ? "#{copyright_year}-#{current_year}" : current_year %> <%= config.dig("project", "copyright", "attribution") %>.
