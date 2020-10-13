@@ -1,5 +1,5 @@
 <%
-  copyright_year = config.dig("project", "copyright", "year")
+  copyright_year = config.dig("project", "copyright", "year")&.to_i
   current_year = Time.now.year
 %>
 
