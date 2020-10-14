@@ -6,7 +6,7 @@ commit:
     - name: "ruby"
       templates:
         - source: "ruby/ruby-version.erb"
-          destination: "./ruby-version"
+          destination: "./.ruby-version"
 
     - name: "ruby-gem"
       templates:
