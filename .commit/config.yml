@@ -1,2 +1,21 @@
-dependents:
-  - repo: metabahn/commit-test
+commit:
+  dependents:
+    - repo: metabahn/commit-test
+
+  groups:
+    - name: "ruby"
+      templates:
+        - source: "ruby/ruby-version"
+          destination: "./ruby-version"
+
+    - name: "ruby-gem"
+      templates:
+        - source: "ruby/gem/gem.gemspec.erb"
+          destination: "./{config.ruby.gem.name}.gemspec"
+
+    - name: "oss"
+
+    - name: "oss-mit"
+      templates:
+        - source: "licenses/mit.erb"
+          destination: "./LICENSE"
