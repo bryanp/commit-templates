@@ -5,7 +5,7 @@ commit:
   groups:
     - name: "ruby"
       templates:
-        - source: "ruby/ruby-version"
+        - source: "ruby/ruby-version.erb"
           destination: "./ruby-version"
 
     - name: "ruby-gem"
