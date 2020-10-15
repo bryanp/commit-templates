@@ -1,6 +1,7 @@
 commit:
   dependents:
     - repo: metabahn/commit-test
+    - repo: metabahn/llhttp
 
   groups:
     - name: "ruby"
