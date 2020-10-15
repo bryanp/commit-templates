@@ -4,6 +4,11 @@ commit:
     - repo: metabahn/llhttp
 
   groups:
+    - name: "git"
+      templates:
+        - source: "git/gitignore.erb"
+          destination: "./.gitignore"
+
     - name: "oss"
       templates:
         - source: "licenses/{config.license.slug}.erb"
@@ -25,6 +30,13 @@ commit:
           destination: "./.standard.yml"
 
     - name: "ruby-gem"
+      config:
+        git:
+          ignore:
+            - "*.bundle"
+            - "Gemfile.lock"
+            - ".ruby-version"
+
       templates:
         - source: "ruby/gem/gem.gemspec.erb"
           destination: "./{config.project.slug}.gemspec"
