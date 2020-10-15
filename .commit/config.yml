@@ -4,6 +4,11 @@ commit:
     - repo: metabahn/llhttp
 
   groups:
+    - name: "oss"
+      templates:
+        - source: "licenses/{config.license.slug}.erb"
+          destination: "./LICENSE"
+
     - name: "ruby"
       templates:
         - source: "ruby/ruby-version.erb"
@@ -23,8 +28,3 @@ commit:
       templates:
         - source: "ruby/gem/gem.gemspec.erb"
           destination: "./{config.project.slug}.gemspec"
-
-    - name: "oss"
-      templates:
-        - source: "licenses/{config.license.slug}.erb"
-          destination: "./LICENSE"
