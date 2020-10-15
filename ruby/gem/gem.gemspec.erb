@@ -1,1 +1,24 @@
+# frozen_string_literal: true
+
+require File.expand_path("../lib/<%= config.project.slug %>/version", __FILE__)
+
+Gem::Specification.new do |spec|
+  spec.name = <%= config.project.slug!.inspect %>
+  spec.version = <%= config.ruby.gem.namespace %>::VERSION
+  spec.summary = <%= config.project.description!.inspect %>
+  spec.description = spec.summary
+
+  spec.author = <%= config.project.author.name!.inspect %>
+  spec.email = <%= config.project.author.email!.inspect %>
+  spec.homepage = <%= config.project.author.homepage!.inspect %>
+
+  spec.required_ruby_version = ">= 2.5.0"
+
+  spec.license = <%= config.license.name!.inspect %>
+
+  spec.files = Dir["CHANGELOG.md", "README.md", "LICENSE", "lib/**/*"]
+  spec.require_path = "lib"
+
+  <%= config.gem.extra! %>
+end
 

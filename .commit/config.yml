@@ -11,11 +11,9 @@ commit:
     - name: "ruby-gem"
       templates:
         - source: "ruby/gem/gem.gemspec.erb"
-          destination: "./{config.ruby.gem.name}.gemspec"
+          destination: "./{config.project.slug}.gemspec"
 
     - name: "oss"
-
-    - name: "oss-mit"
       templates:
-        - source: "licenses/mit.erb"
+        - source: "licenses/{config.license.slug}.erb"
           destination: "./LICENSE"
