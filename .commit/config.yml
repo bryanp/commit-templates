@@ -6,13 +6,15 @@ commit:
   groups:
     - name: "ruby"
       templates:
-        - source: "ruby/rspec.erb"
-          destination: "./.rspec"
-
-      templates:
         - source: "ruby/ruby-version.erb"
           destination: "./.ruby-version"
 
+    - name: "ruby-rspec"
+      templates:
+        - source: "ruby/rspec.erb"
+          destination: "./.rspec"
+
+    - name: "ruby-standard"
       templates:
         - source: "ruby/standard.yml.erb"
           destination: "./.standard.yml"
