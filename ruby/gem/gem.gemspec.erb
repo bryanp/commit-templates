@@ -16,9 +16,6 @@ Gem::Specification.new do |spec|
 
   spec.license = <%= config.license.name!.inspect %>
 
-  spec.files = Dir["CHANGELOG.md", "README.md", "LICENSE", "lib/**/*"]
-  spec.require_path = "lib"
-
   <%= config.gem.extra! %>
 end
 
