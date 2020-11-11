@@ -22,8 +22,14 @@ commit:
 
     - name: "ruby-rspec"
       templates:
-        - source: "ruby/rspec.erb"
+        - source: "ruby/rspec/dotrspec.erb"
           destination: "./.rspec"
+        - source: "ruby/rspec/initialize.rb.erb"
+          destination: "./spec/initialize.rb"
+        - source: "ruby/rspec/initializers/configure.rb.erb"
+          destination: "./spec/initializers/configure.rb"
+        - source: "ruby/rspec/initializers/matchers.rb.erb"
+          destination: "./spec/initializers/matchers.rb"
 
     - name: "ruby-standard"
       templates:
