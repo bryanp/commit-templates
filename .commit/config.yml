@@ -12,7 +12,7 @@ commit:
 
     - name: "git"
       templates:
-        - source: "git/gitignore.erb"
+        - source: "git/dotgitignore.erb"
           destination: "./.gitignore"
 
     - name: "oss"
@@ -22,7 +22,7 @@ commit:
 
     - name: "ruby"
       templates:
-        - source: "ruby/ruby-version.erb"
+        - source: "ruby/dotruby-version.erb"
           destination: "./.ruby-version"
 
     - name: "ruby-rspec"
@@ -38,7 +38,7 @@ commit:
 
     - name: "ruby-standard"
       templates:
-        - source: "ruby/standard.yml.erb"
+        - source: "ruby/dotstandard.yml.erb"
           destination: "./.standard.yml"
 
     - name: "ruby-gem"
