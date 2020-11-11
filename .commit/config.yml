@@ -5,6 +5,11 @@ commit:
     - repo: metabahn/llhttp
 
   groups:
+    - name: "base"
+      templates:
+        - source: "editor/doteditorconfig.erb"
+          destination: "./.editorconfig"
+
     - name: "git"
       templates:
         - source: "git/gitignore.erb"
