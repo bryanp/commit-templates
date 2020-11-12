@@ -1,7 +1,7 @@
 commit:
   dependents:
     - repo: metabahn/commit-test
-    - repo: metabahn/fscontent
+    - repo: metabahn/contentfs
     - repo: metabahn/llhttp
 
   groups:
