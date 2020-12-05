@@ -2,6 +2,8 @@ commit:
   dependents:
     - repo: metabahn/commit-test
     - repo: metabahn/contentfs
+    - repo: metabahn/corerb
+    - repo: metabahn/isrb
     - repo: metabahn/llhttp
 
   groups:
