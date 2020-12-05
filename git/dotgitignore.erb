@@ -1,4 +1,4 @@
 .commit/tools
-<% config.git.ignore!.each do |ignore| -%>
+<% config.git.ignore!.to_a.each do |ignore| -%>
 <%= ignore %>
 <% end %>
