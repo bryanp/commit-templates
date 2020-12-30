@@ -48,6 +48,7 @@ commit:
         git:
           ignore:
             - "*.bundle"
+            - "*.gem"
             - "Gemfile.lock"
             - ".ruby-version"
 
