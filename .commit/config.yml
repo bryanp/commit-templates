@@ -5,6 +5,7 @@ commit:
     - repo: metabahn/corerb
     - repo: metabahn/isrb
     - repo: metabahn/llhttp
+    - repo: metabahn/stringdoc
 
   groups:
     - name: "base"
