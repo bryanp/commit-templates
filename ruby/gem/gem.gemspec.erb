@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.email = <%= config.project.author.email!.inspect %>
   spec.homepage = <%= config.project.author.homepage!.inspect %>
 
-  spec.required_ruby_version = ">= 2.5.0"
+  spec.required_ruby_version = ">= <%= config.ruby.gem.version! || "2.5.0" %>"
 
   spec.license = <%= config.license.name!.inspect %>
 
