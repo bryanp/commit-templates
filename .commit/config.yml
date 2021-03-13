@@ -1,6 +1,7 @@
 commit:
   dependents:
     - repo: metabahn/b3bm
+    - repo: metabahn/b3e
     - repo: metabahn/branca
     - repo: metabahn/commit-test
     - repo: metabahn/contentfs
