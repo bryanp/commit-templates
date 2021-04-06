@@ -8,8 +8,8 @@ commit:
     - repo: metabahn/corerb
     - repo: metabahn/isrb
     - repo: metabahn/llhttp
-    - repo: metabahn/proc-javascript
-    - repo: metabahn/proc-ruby
+    - repo: metabahn/proc-js
+    - repo: metabahn/proc-rb
     - repo: metabahn/stringdoc
 
   groups:
